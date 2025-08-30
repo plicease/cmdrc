@@ -4,6 +4,10 @@ use feature qw( say );
 use Path::Tiny qw( path );
 use Capture::Tiny qw( capture_stdout );
 
+# TODO: grep, nano
+
+say "which=where \$*";
+
 my $out = capture_stdout { system 'coreutils', '--list' };
 
 my %sp = (
@@ -13,6 +17,7 @@ my %sp = (
     cp => 'cp -i $*',
     rm => 'rm -i $*',
     mv => 'mv -i $*',
+    df => 'df -h $*',
 );
 
 foreach my $cmd (split /\s+/, $out) {

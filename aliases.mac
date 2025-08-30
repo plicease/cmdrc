@@ -1,3 +1,4 @@
+which=where $*
 [=coreutils [ $*
 arch=coreutils arch $*
 b2sum=coreutils b2sum $*
@@ -14,7 +15,7 @@ csplit=coreutils csplit $*
 cut=coreutils cut $*
 date=coreutils date $*
 dd=coreutils dd $*
-df=coreutils df $*
+df=coreutils df -h $*
 dir=coreutils dir $*
 dircolors=coreutils dircolors $*
 dirname=coreutils dirname $*
