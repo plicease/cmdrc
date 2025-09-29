@@ -5,6 +5,8 @@ use Path::Tiny qw( path );
 use Capture::Tiny qw( capture_stdout );
 
 say "which=where \$*";
+say "grep=grep --color=yes \$*";
+say "cal=gcal \$*";
 
 my $out = capture_stdout { system 'coreutils', '--list' };
 
