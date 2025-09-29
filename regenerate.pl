@@ -7,6 +7,7 @@ use Capture::Tiny qw( capture_stdout );
 say "which=where \$*";
 say "grep=grep --color=yes \$*";
 say "cal=gcal \$*";
+say "ftp=ncftp \$*";
 
 my $out = capture_stdout { system 'coreutils', '--list' };
 
