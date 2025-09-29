@@ -1,4 +1,4 @@
 @echo off
 
-winget install -i StrawberryPerl.StrawberryPerl
+winget install StrawberryPerl.StrawberryPerl
 perl bootstrap.pl

@@ -55,14 +55,10 @@ if(1) {
 
 }
 
-# registry
-if (1) {
-    run "reg import cmd-aliases.reg";
-}
-
 # uutils
 if (1) {
     run "cargo install coreutils";
+    run "reg import cmd-aliases.reg";
     run "cargo install findutils";
     run "cargo install diffutils";
 }
