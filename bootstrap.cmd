@@ -1,7 +1,4 @@
 @echo off
 
-winget install StrawberryPerl.StrawberryPerl
-
-reg import cmd-aliases.reg
-
+winget install -i StrawberryPerl.StrawberryPerl
 perl bootstrap.pl

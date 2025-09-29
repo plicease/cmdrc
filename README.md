@@ -6,3 +6,5 @@
 2. `git clone git@github.com:plicease/cmdrc.git`
 3. `cd cmdrc`
 4. `bootstrap.cmd`
+5. ... wait a while ...
+6. 
