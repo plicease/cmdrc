@@ -8,3 +8,7 @@
 4. `bootstrap.cmd`
 5. ... wait a while ...
 6. irm https://get.activated.win | iex
+
+## KVM:
+
+1. download and install: [https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe](spice guest tools)
