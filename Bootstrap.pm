@@ -45,10 +45,7 @@ sub Bootstrap::add_path ($dir) {
 
     {
         my $old = $lookup->("Path");
-        say "old = $old";
         my $new = "$old;$dir";
-        say "new = $new";
-
         RegSetValueEx( $key, "Path", 0, 2, $new) or die $^E;
     }
 
