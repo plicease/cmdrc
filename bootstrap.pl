@@ -43,6 +43,7 @@ if(1) {
         { name => "GNU.Nano" },
         { name => "VideoLAN.VLC" },
         { name => "NcFTP.NcFTP" },
+        { name => "zig.zig" },
     );
 
     foreach my $package (@packages) {
