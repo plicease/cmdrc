@@ -47,7 +47,7 @@ if(1) {
 
     foreach my $package (@packages) {
         my $names = ref $package->{name} ? $package->{name} : [$package->{name}];
-        foreach my $name {
+        foreach my $name (@$names) {
             run "winget install $name";
         }
         $package->{cb}->() if $package->{cb};
