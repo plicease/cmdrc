@@ -20,3 +20,8 @@ powershell as admin
 
 1. `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 2. `wsl --install`
+3. reboot
+4. `wsl --install Ubuntu`
+5. `apt update && apt install openssh-server` (inside linux)
+6. `netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=<WSL_IP>`
+7. `New-NetFirewallRule -DisplayName "Allow SSH on port 22" -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22`
