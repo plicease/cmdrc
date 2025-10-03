@@ -13,3 +13,10 @@
 
 1. download and install: [spice guest tools](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe)
 2. should immediately be able to change the resolution.
+
+## WSL
+
+powershell as admin
+
+1. `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+2. `wsl --install`
